@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navBar{
     background-color:#be3144;
     display: flex;
@@ -92,17 +95,22 @@ font{
     background-color: #303841;
     margin-top: 2.5rem;
   }
+  .card:hover .title{
+display: block;
+color: #ff7f50;
+  }
   .card_title {
     font-size: 20px;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 0rem; 
     color: rgba(255, 255, 255, 0.91);
-    text-align: center;
+    /* text-align: center; */
+    justify-content: center;
+    display: flex;
+   flex-direction: row;
   }
-  .card_title:hover{
-    
+  /* .card_title:hover{
       color: #ff7f50 ;
-    
-  }
+  } */
 .card_link{
   text-decoration: none;
 
@@ -112,17 +120,14 @@ font{
     height: 370px;
     object-fit: cover;
   }
-   .title:hover {
-    color: #ff7f50;
-    
-  } 
-
+  
   .title {
     font-size: 21px;
-    padding: 1.5rem 0rem;
+    /* padding: 1.5rem 0rem; */
     color: rgba(255, 255, 255, 0.91);
     text-align: center;
-     /* display: none; */
+    color: #303841;
+   
   }
  
   .add_new_card {
@@ -136,13 +141,11 @@ font{
     font-size: 22px;
     border-radius: 3px;
   }
- 
+
   .add_new_card  a:hover {
     background: #be3144;
   }
-  .add_new_card  a:hover i {
-    transform: translateX(2px);
-  }
+ 
 .projectFont{
     border-bottom: 2px solid white;
     font-weight: 600;
